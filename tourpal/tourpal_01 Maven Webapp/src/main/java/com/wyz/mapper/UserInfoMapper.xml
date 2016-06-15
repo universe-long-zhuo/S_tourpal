@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- DAO层-实现 -->
 <mapper namespace="com.wyz.mapper.UserInfoMapper" >
   <resultMap id="BaseResultMap" type="com.wyz.po.UserInfo" >
     <id column="user_number" property="userNumber" jdbcType="VARCHAR" />
@@ -10,7 +11,7 @@
   
   
   
-  
+  <!-- 登录验证 -->
   <sql id="Base_Column_List" >
     user_number, user_name, user_pw, user_type
   </sql>
